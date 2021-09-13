@@ -43,5 +43,4 @@ if __name__ == "__main__":
 ```
 
 ### Result
-> ![image](https://user-images.githubusercontent.com/20378368/133105406-aa53bc73-cd16-4c2b-9fa2-799c3e7a9d6f.png)
-> ![image](https://user-images.githubusercontent.com/20378368/133105942-91b83fc9-aa03-4e9d-99d0-fda9717214a2.png)
+> ![결과](https://user-images.githubusercontent.com/20378368/133106473-77f6aca8-d7aa-40f7-b988-597d8f20e440.png)
