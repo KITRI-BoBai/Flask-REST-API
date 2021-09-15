@@ -96,4 +96,5 @@ if __name__ == "__main__":
 ```
 
 ### Result
-> ![결과](https://user-images.githubusercontent.com/20378368/133106473-77f6aca8-d7aa-40f7-b988-597d8f20e440.png)
+> ![input](https://user-images.githubusercontent.com/20378368/133350942-edec3d2b-88f2-4a70-9c6f-4aa40a26428b.png)  
+> ![api](https://user-images.githubusercontent.com/20378368/133106473-77f6aca8-d7aa-40f7-b988-597d8f20e440.png)  
