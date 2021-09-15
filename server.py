@@ -18,9 +18,8 @@ petition = -1
 mydict = {}
 with open('./bluehouse/result-test.csv', 'r', encoding='utf-8') as input:
     reader = csv.reader(input)
-    for rows in reader:
-        mydict = {rows[0]:rows[1]}
-        count += 1
+    mydict = {rows[0]:rows[1] for rows in reader}
+    count = len(mydict.keys()) - 1
 
 # /upload: HTML 렌더링
 @app.route('/upload')
@@ -41,7 +40,6 @@ def add_result():
     global count
     global petition
     global number
-    global mydict
     with open('./bluehouse/result-input.csv', 'r', encoding='utf-8') as input:
         first_line_flag = False
         reader = csv.reader(input)
@@ -54,7 +52,7 @@ def add_result():
         f = open('./bluehouse/result-test.csv', 'a', newline='')
         wr = csv.writer(f)
         wr.writerow([count, petition])
-        mydict[count] = petition
+        mydict[str(count)] = petition
         count += 1
     return redirect(url_for('print_result'))
 
@@ -63,7 +61,7 @@ def add_result():
 def print_result():
     return {
         "index": "%s" % str(count - 1),
-        "category": "%s" % mydict[count - 1],
+        "category": "%s" % mydict[str(count - 1)],
         "url": "https://www1.president.go.kr/petitions/%s" % number
     }
 
